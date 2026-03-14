@@ -1,0 +1,170 @@
+[
+  {
+    "category": "官方资源",
+    "icon": "🏛️",
+    "items": [
+      {
+        "name": "中国注册会计师协会",
+        "url": "https://www.cicpa.org.cn",
+        "desc": "CPA考试官方网站，报名、成绩查询、政策公告",
+        "tags": ["官方", "报名", "成绩"]
+      },
+      {
+        "name": "注册会计师全国统一考试网上报名系统",
+        "url": "https://cpaexam.cicpa.org.cn",
+        "desc": "CPA考试报名入口",
+        "tags": ["官方", "报名"]
+      },
+      {
+        "name": "财政部会计司",
+        "url": "http://kjs.mof.gov.cn",
+        "desc": "会计准则、法规文件发布",
+        "tags": ["官方", "准则"]
+      },
+      {
+        "name": "中国证监会",
+        "url": "http://www.csrc.gov.cn",
+        "desc": "证券法规、上市公司信息披露",
+        "tags": ["官方", "证券法"]
+      }
+    ]
+  },
+  {
+    "category": "免费学习平台",
+    "icon": "📚",
+    "items": [
+      {
+        "name": "中华会计网校（正保会计网校）",
+        "url": "https://www.chinaacc.com/zhucekuaijishi/",
+        "desc": "CPA备考资料、免费试听课程、历年真题",
+        "tags": ["课程", "真题", "免费试听"]
+      },
+      {
+        "name": "东奥会计在线",
+        "url": "https://www.dongao.com/cpa/",
+        "desc": "CPA辅导课程、轻松过关系列、每日一练",
+        "tags": ["课程", "每日一练"]
+      },
+      {
+        "name": "高顿教育CPA",
+        "url": "https://www.gaodun.com/cpa/",
+        "desc": "CPA备考攻略、学习社区、模拟题库",
+        "tags": ["课程", "题库", "社区"]
+      },
+      {
+        "name": "哔哩哔哩CPA会计",
+        "url": "https://search.bilibili.com/all?keyword=CPA%E4%BC%9A%E8%AE%A1",
+        "desc": "B站免费CPA课程（张志凤、郭建华等名师课程搬运）",
+        "tags": ["免费", "视频", "名师"]
+      },
+      {
+        "name": "哔哩哔哩CPA经济法",
+        "url": "https://search.bilibili.com/all?keyword=CPA%E7%BB%8F%E6%B5%8E%E6%B3%95",
+        "desc": "B站免费CPA经济法课程（郭守杰等名师课程）",
+        "tags": ["免费", "视频", "经济法"]
+      }
+    ]
+  },
+  {
+    "category": "题库与刷题",
+    "icon": "✏️",
+    "items": [
+      {
+        "name": "注会帮",
+        "url": "https://www.kuaiji.com/cpa/",
+        "desc": "CPA在线题库、章节练习、模拟考试",
+        "tags": ["题库", "模拟考"]
+      },
+      {
+        "name": "会计学堂",
+        "url": "https://www.acc5.com/",
+        "desc": "CPA题库、实务案例、会计实操",
+        "tags": ["题库", "实务"]
+      },
+      {
+        "name": "万题库CPA",
+        "url": "https://www.wantiku.com/cpa/",
+        "desc": "历年真题、章节练习、AI智能组卷",
+        "tags": ["真题", "智能组卷"]
+      }
+    ]
+  },
+  {
+    "category": "备考工具",
+    "icon": "🛠️",
+    "items": [
+      {
+        "name": "Anki 记忆卡片",
+        "url": "https://apps.ankiweb.net/",
+        "desc": "间隔重复记忆工具，支持自定义卡片组",
+        "tags": ["记忆", "工具", "免费"]
+      },
+      {
+        "name": "XMind 思维导图",
+        "url": "https://xmind.cn/",
+        "desc": "整理知识框架，制作章节思维导图",
+        "tags": ["思维导图", "笔记"]
+      },
+      {
+        "name": "Forest 专注森林",
+        "url": "https://www.forestapp.cc/",
+        "desc": "番茄钟学习计时，种树防止玩手机",
+        "tags": ["专注", "计时"]
+      },
+      {
+        "name": "Notion",
+        "url": "https://www.notion.so/",
+        "desc": "笔记管理、学习计划跟踪、错题本整理",
+        "tags": ["笔记", "管理"]
+      }
+    ]
+  },
+  {
+    "category": "法规查询",
+    "icon": "⚖️",
+    "items": [
+      {
+        "name": "国家法律法规数据库",
+        "url": "https://flk.npc.gov.cn/",
+        "desc": "全国人大官方法律数据库，查询最新法律全文",
+        "tags": ["法律", "官方", "经济法"]
+      },
+      {
+        "name": "企业会计准则全文",
+        "url": "http://kjs.mof.gov.cn/zt/kjzzss/kuaijizhunze/",
+        "desc": "财政部发布的全套企业会计准则",
+        "tags": ["准则", "官方", "会计"]
+      },
+      {
+        "name": "巨潮资讯网",
+        "url": "http://www.cninfo.com.cn/",
+        "desc": "上市公司公告、年报，实务学习参考",
+        "tags": ["实务", "年报", "案例"]
+      }
+    ]
+  },
+  {
+    "category": "经验分享",
+    "icon": "💬",
+    "items": [
+      {
+        "name": "知乎CPA话题",
+        "url": "https://www.zhihu.com/topic/19569699/hot",
+        "desc": "CPA备考经验分享、高分学员心得",
+        "tags": ["经验", "社区"]
+      },
+      {
+        "name": "小红书CPA备考",
+        "url": "https://www.xiaohongshu.com/search_result?keyword=CPA%E5%A4%87%E8%80%83",
+        "desc": "CPA备考笔记、时间规划、手写笔记分享",
+        "tags": ["经验", "笔记", "颜值"]
+      },
+      {
+        "name": "微博CPA超话",
+        "url": "https://weibo.com/p/1008084b5e39c7ce43cd28d6d1f72a7eed12e0",
+        "desc": "CPA考友交流、考试动态、打卡互助",
+        "tags": ["社区", "打卡"]
+      }
+    ]
+  }
+]

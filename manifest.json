@@ -1,0 +1,18 @@
+{
+  "version": "1.1.0",
+  "files": {
+    "quotes":                    { "v": 1, "path": "data/quotes.json" },
+    "ankiCards":                 { "v": 1, "path": "data/anki-cards.json" },
+    "cheatsheetData":            { "v": 1, "path": "data/cheatsheet.json" },
+    "studyPlanData":             { "v": 1, "path": "data/study-plan.json" },
+    "chapters":                  { "v": 1, "path": "data/chapters.json" },
+    "promptTemplates":           { "v": 1, "path": "data/prompt-templates.json" },
+    "formulaData":               { "v": 1, "path": "data/formula-data.json" },
+    "economic_law_chapters":     { "v": 1, "path": "data/economic-law-chapters.json" },
+    "economic_law_study_plan":   { "v": 1, "path": "data/economic-law-study-plan.json" },
+    "economic_law_cheatsheet":   { "v": 1, "path": "data/economic-law-cheatsheet.json" },
+    "economic_law_anki_cards":   { "v": 1, "path": "data/economic-law-anki-cards.json" },
+    "economic_law_formulas":     { "v": 1, "path": "data/economic-law-formulas.json" },
+    "resources":                 { "v": 1, "path": "data/resources.json" }
+  }
+}
