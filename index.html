@@ -7914,6 +7914,9 @@ function downloadSync(code, cb) {
   });
 }
 
+function asArr(v) { return Array.isArray(v) ? v : []; }
+function asObj(v) { return (v && typeof v === 'object' && !Array.isArray(v)) ? v : {}; }
+
 function mergeData(local, remote) {
   var merged = {};
 
@@ -7923,8 +7926,8 @@ function mergeData(local, remote) {
   });
 
   // checkins: 按日期并集，冲突取学时更高的
-  var lc = local.checkins || {};
-  var rc = remote.checkins || {};
+  var lc = asObj(local.checkins);
+  var rc = asObj(remote.checkins);
   var mc = {};
   var allDays = {};
   Object.keys(lc).forEach(function(d) { allDays[d] = 1; });
@@ -7951,7 +7954,7 @@ function mergeData(local, remote) {
     // points_learned / chapter_progress: 并集
     ['points_learned', 'chapter_progress'].forEach(function(base) {
       var k = p + base;
-      var lo = local[k] || {}, ro = remote[k] || {}, mo = {};
+      var lo = asObj(local[k]), ro = asObj(remote[k]), mo = {};
       Object.keys(lo).forEach(function(x) { mo[x] = lo[x]; });
       Object.keys(ro).forEach(function(x) { mo[x] = ro[x]; });
       merged[k] = mo;
@@ -7959,7 +7962,7 @@ function mergeData(local, remote) {
 
     // wrongs: 按 id 并集去重
     var wk = p + 'wrongs';
-    var lw = local[wk] || [], rw = remote[wk] || [];
+    var lw = asArr(local[wk]), rw = asArr(remote[wk]);
     var wrongMap = {};
     lw.forEach(function(w) { wrongMap[w.id || w.question] = w; });
     rw.forEach(function(w) { wrongMap[w.id || w.question] = w; });
@@ -7967,7 +7970,7 @@ function mergeData(local, remote) {
 
     // card_statuses: 取更高级状态
     var ck = p + 'card_statuses';
-    var lcs = local[ck] || {}, rcs = remote[ck] || {}, mcs = {};
+    var lcs = asObj(local[ck]), rcs = asObj(remote[ck]), mcs = {};
     var allIds = {};
     Object.keys(lcs).forEach(function(x) { allIds[x] = 1; });
     Object.keys(rcs).forEach(function(x) { allIds[x] = 1; });
@@ -7979,7 +7982,7 @@ function mergeData(local, remote) {
 
     // exam_records: 合并去重（按date+score去重，取并集）
     var ek = p + 'exam_records';
-    var le = local[ek] || [], re = remote[ek] || [];
+    var le = asArr(local[ek]), re = asArr(remote[ek]);
     var examMap = {};
     le.forEach(function(r) { examMap[r.date + '_' + r.score] = r; });
     re.forEach(function(r) { examMap[r.date + '_' + r.score] = r; });
